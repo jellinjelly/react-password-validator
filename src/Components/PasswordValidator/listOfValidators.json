@@ -1,0 +1,7 @@
+{
+  "validatorDescs" : {
+    "hasNumber" : "Has a Number 0-9",
+    "hasUpperCase" : "Has uppercase Letter",
+    "hasSpecialChar" : "Has a special char !@#$%^&*"
+  }
+}

@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+import PasswordValidator from './Components/PasswordValidator'
 import './App.css';
 
 function App() {
+  const passwordReqs = {
+    hasNumber: true,
+    hasSpecialChar: true,
+    hasUpperCase: true,
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <PasswordValidator options={passwordReqs}/>
       </header>
     </div>
   );
