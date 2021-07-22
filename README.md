@@ -22,9 +22,9 @@ Validate implementation with testing
 Used CRA to create a demo of a password validation component because of its quick set up. Depending on the project requirements, Gatsby or Next.js can be used instead.
 
 Includes the following password validations:
-  Contains a Number
-  Contains an UpperCase letter
-  Contains a special character !@#$%^&*
+  - Contains a Number
+  - Contains an UpperCase letter
+  - Contains a special character !@#$%^&*
 
 Additional validations can be added via `listOfValidators.json` and `usePasswordValidation.js`. Must be added to both.
 
