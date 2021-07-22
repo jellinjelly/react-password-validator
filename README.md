@@ -38,7 +38,7 @@ This file is a custom hook used for validating each password requirement validat
 
 ## Props
 
-| Name     |      Type     |                    Description                     |
-|----------|:-------------:|---------------------------------------------------:|
+| Name     |      Type     |   Description                                      |
+|----------|:-------------:|:--------------------------------------------------:|
 | options  |     Object    | Password Requirements from `listOfValidators.json` |
 
