@@ -17,6 +17,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Built folder already exist, please open in browser to view.
 
+### `npm run test`
+
+Simple test cases for rendering components with valid props and checking the four password validations.
+
+
 ## About
 
 Used CRA to create a demo of a password validation component because of its quick set up. Depending on the project requirements, Gatsby or Next.js can be used instead.
