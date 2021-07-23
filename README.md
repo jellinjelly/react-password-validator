@@ -60,3 +60,7 @@ This file contains all the validators that can be used. Each validator contains 
 | hasSpecialChar      |     Object    | to check if password contains a special character           |
 | noConsecutiveLetters|     Object    | to check if password doesn't contain any consecutive letters|
 
+
+### Future Development
+
+Would like to add a second input field for password confirmation and cross check with first input
