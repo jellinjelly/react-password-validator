@@ -1,18 +1,18 @@
 import PasswordValidator from './Components/PasswordValidator'
-import './App.css';
 
 function App() {
-  const passwordReqs = {
-    hasNumber: true,
-    hasSpecialChar: true,
-    hasUpperCase: true,
-  }
+  const passwordReqs = [
+    "hasNumber",
+    "hasSpecialChar",
+    "hasUpperCase",
+    "noConsecutiveLetters"
+  ]
 
   return (
     <div className="App">
-      <header className="App-header">
+      <section>
         <PasswordValidator options={passwordReqs}/>
-      </header>
+      </section>
     </div>
   );
 }

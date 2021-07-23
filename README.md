@@ -13,9 +13,9 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+### `npm run build`
 
-Validate implementation with testing
+Built folder already exist, please open in browser to view.
 
 ## About
 
@@ -25,20 +25,30 @@ Includes the following password validations:
   - Contains a Number
   - Contains an UpperCase letter
   - Contains a special character !@#$%^&*
+  - Does not contain consecutive letters
 
-Additional validations can be added via `listOfValidators.json` and `usePasswordValidation.js`. Must be added to both.
+Additional validations can be added via `validators.js`. All fields must be filled.
 
-#### `listOfValidators.json`
+#### `validators.js`
 
-This file contains all the descriptions for each validation to be displayed. Append to this list for additional validations
+This file contains all the validators that can be used. Each validator contains 3 fields:
+  - desc : description of the validator
+  - validation: function to validate and returns whether it is validated or not
+  - isInUse: should default as false
 
-#### `usePasswordValidation.js`
-
-This file is a custom hook used for validating each password requirement validation.
 
 ## Props
 
 | Name     |      Type     |   Description                                      |
 |----------|:-------------:|:--------------------------------------------------:|
-| options  |     Object    | Password Requirements from `listOfValidators.json` |
+| options  |     Array     | Password Requirements from `validators.js`         |
+
+### Existing password requirements
+
+| Name                |      Type     |   Description                                               |
+|---------------------|:-------------:|:-----------------------------------------------------------:|
+| hasNumber           |     Object    | to check if password contains a number                      |
+| hasUpperCase        |     Object    | to check if password contains an uppercase letter           |
+| hasSpecialChar      |     Object    | to check if password contains a special character           |
+| noConsecutiveLetters|     Object    | to check if password doesn't contain any consecutive letters|
 

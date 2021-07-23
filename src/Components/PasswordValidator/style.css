@@ -1,0 +1,56 @@
+.pwv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.pwv .container {
+  display: grid;
+  grid-template-columns: 0fr 1fr 2fr;
+}
+
+.pwv .container input {
+  align-self: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 25px;
+}
+
+.pwv .container label {
+  visibility: hidden;
+}
+
+.pwv .container ul {
+  list-style: none;
+}
+
+.pwv .container li {
+  margin-bottom: 15px;
+}
+
+.pwv .container .icon-circle {
+  display: inline-block;
+  background-color: red;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: none;
+  vertical-align: middle;
+  margin-right: 15px;
+  position: relative;
+}
+
+.pwv .container .icon-circle.success {
+  background-color: green;
+}
+
+.pwv .container .icon-circle > div {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 700;
+}
