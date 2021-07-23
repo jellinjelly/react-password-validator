@@ -19,7 +19,7 @@ Built folder already exist, please open in browser to view.
 
 ### `npm run test`
 
-Simple test cases for rendering components with valid props and checking the four password validations.
+Simple test cases for rendering components with valid props and checking the current available four password validations.
 
 
 ## About
