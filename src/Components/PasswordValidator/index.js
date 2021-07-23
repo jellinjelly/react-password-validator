@@ -34,7 +34,7 @@ const PasswordValidator = ({options}) => {
   useEffect(() => {
     if (Object.keys(selectedValidations).length){
       let renderView = options.map(option => {
-        return (<li key={option}> <ValidatorIcon isValidated={selectedValidations[option].validation(password)}/>
+        return (<li key={option} > <ValidatorIcon isValidated={selectedValidations[option].validation(password)}/>
         {selectedValidations[option].desc}
       </li>)
       })
@@ -47,7 +47,7 @@ const PasswordValidator = ({options}) => {
       <h1>Password Component</h1>
       <div className="container">
         <label htmlFor="password">Password</label>
-        <input type="password" name="password" onChange={handlePasswordChange}/>
+        <input id="password" type="password" name="password" onChange={handlePasswordChange}/>
         <ul>
           {currentValidators}
         </ul>
