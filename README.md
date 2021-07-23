@@ -27,7 +27,10 @@ Includes the following password validations:
   - Contains a special character !@#$%^&*
   - Does not contain consecutive letters
 
-Additional validations can be added via `validators.js`. All fields must be filled.
+
+
+### Additional validations can be added via `validators.js` and used as props. All fields must be filled.
+
 
 #### `validators.js`
 
