@@ -19,7 +19,7 @@ export const initialState = {
     "desc" : "Has no consecutive letters",
     "validation" : (password) => {
       for(let i = 0; i < password.length; i++) {
-        if(password[i] === password[i - 1] && (/[a-zA-Z]/).test(password[i])) {
+        if(password[i].toLowerCase() === (password[i - 1] && password[i-1].toLowerCase()) && (/[a-zA-Z]/).test(password[i])) {
           return false
         }
       }

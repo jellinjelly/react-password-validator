@@ -5,7 +5,7 @@ function App() {
     "hasNumber",
     "hasSpecialChar",
     "hasUpperCase",
-    "noConsecutiveLetters"
+    "noConsecutiveLetters",
   ]
 
   return (

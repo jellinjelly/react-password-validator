@@ -34,9 +34,12 @@ const PasswordValidator = ({options}) => {
   useEffect(() => {
     if (Object.keys(selectedValidations).length){
       let renderView = options.map(option => {
-        return (<li key={option} > <ValidatorIcon isValidated={selectedValidations[option].validation(password)}/>
-        {selectedValidations[option].desc}
-      </li>)
+        if(selectedValidations[option]) {
+          return (<li key={option} > <ValidatorIcon isValidated={selectedValidations[option].validation(password)}/>
+          {selectedValidations[option].desc}
+        </li>)
+        }
+        return <div key={option}></div>
       })
       setCurrentValidators(renderView);
     }
