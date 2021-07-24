@@ -65,4 +65,8 @@ This file contains all the validators that can be used. Each validator contains 
 
 ### Future Development
 
-Would like to add a second input field for password confirmation and cross check with first input
+ - Can add a second input field for password confirmation and cross check with first input
+ - Can add XSS filter, assuming this is going to be a submittable form
+ - Can create a type of database to store validation data instead of the js file
+
+
