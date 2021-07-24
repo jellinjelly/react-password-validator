@@ -1,5 +1,7 @@
 # Password Validation Component
 
+![Alt text]('./public/screenshot.png' "Screenshot of password component")
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## How to get started
